@@ -1,0 +1,140 @@
+.section--contacts {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #7e6d53;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.contacts__subtitle {
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__menu {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $main-color;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 16px;
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 700px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    gap: 24px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  gap: 8px;
+  border-radius: 5px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  transition-property: box-shadow;
+  transition: box-shadow 0.8s, scale 0.8s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 7px 3px #fff;
+    scale: 1.15;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.contacts__link-address {
+  &::before {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%23FCFCFB' stroke-linecap='round' stroke-linejoin='round' d='M12 2.25a7.41 7.41 0 0 0-7.41 7.41v.54c.3 4.06 3.67 7.325 7.41 11.55 3.905-4.41 7.41-7.75 7.41-12.09A7.41 7.41 0 0 0 12 2.25Zm0 3.85a3.565 3.565 0 1 1 0 7.13 3.565 3.565 0 0 1 0-7.13Z'/%3E%3C/svg%3E");
+  }
+}
+
+.contacts__link-email {
+  &::before {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cg stroke='%23FCFCFB' stroke-linecap='round' stroke-linejoin='round' clip-path='url(%23a)'%3E%3Cpath d='M18.861 20.276c.267-.222.524-.456.769-.703M17.91 12a5.904 5.904 0 1 0-11.81.011 5.904 5.904 0 0 0 11.81-.01h0Z'/%3E%3Cpath d='M22.75 12a10.75 10.75 0 1 0-19.849 5.706l-.667 4.06 4.06-.667a10.727 10.727 0 0 0 9.89.806'/%3E%3Cpath d='M17.572 13.968c-.722 1.761.454 2.709 1.465 2.939 1.234.28 3.713-1.01 3.713-4.907'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  }
+}
+
+.contacts__link-phone {
+  &::before {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%23FCFCFB' stroke-linecap='round' stroke-linejoin='round' d='M20.36 15.14a30.97 30.97 0 0 1-3.15-.555 1.556 1.556 0 0 0-1.5.29c-.265.27-1.03 1.025-1.825 1.805a14.345 14.345 0 0 1-6.55-6.555c.775-.795 1.5-1.555 1.795-1.82a1.555 1.555 0 0 0 .29-1.5 30.92 30.92 0 0 1-.555-3.155 1 1 0 0 0-1.15-.885h-4.26a.75.75 0 0 0-.68.685C2.5 7.295 4.645 11.41 5.08 12.2v.03l.06.115c1.557 2.7 3.8 4.943 6.5 6.5v0l.22.125c1 .53 4.975 2.53 8.69 2.255a.75.75 0 0 0 .695-.68V16.29a1 1 0 0 0-.885-1.15Z'/%3E%3C/svg%3E");
+  }
+}

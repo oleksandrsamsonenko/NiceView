@@ -1,0 +1,34 @@
+<!--Download catalog-->
+<div class="download-backdrop is-hidden" data-download-modal>
+    <div class="download">
+        <button class="download__btn" type="button" data-download-modal-close>
+            <svg class="download__icon" width="18" height="18">
+                <use href="images/svg-sprite.svg#modal-close"></use>
+            </svg>
+        </button>
+        <div class="download__container">
+            <picture>
+                <source media="(min-width: 320px)" srcset="
+                    ./images/modals/waiting.png 1x,
+                     ./images/modals/waiting@2x.png 2x">
+                <img class="download__img" src="./images/modals/waiting.png" alt="Man" width="112" height="134">
+            </picture>
+            <div class="download__content-wrapper">
+                <strong class="download__title">Download the catalog</strong>
+                <p class="download__subtitle">We will send you more photos,
+                    videos and information by mail</p>
+                <div class="download__input-wrapper">
+                    <form>
+                        <input class="download__input" type="email" name="email" placeholder="Email adress" required
+                            minlength="5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <button class="download__send-btn" type="submit">
+                            <svg class="download__send-icon" width="24" height="24">
+                                <use href="images/svg-sprite.svg#send-mail"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

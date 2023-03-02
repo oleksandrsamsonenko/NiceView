@@ -1,0 +1,175 @@
+.about {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+
+.bgc-section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 677px;
+  background-image: url('../images/philosophy/mob_ph@1x.jpg');
+
+  // mobile retina
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/philosophy/mob_ph@2x.jpg');
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    height: 630px;
+    background-image: url('../images/philosophy/tab_ph@1x.jpg');
+
+    // tablet retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/philosophy/tab_ph@2x.jpg');
+    }
+  }
+
+  // desktop
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/philosophy/dsc_ph@1x.jpg');
+
+    // desktop retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/philosophy/dsc_ph@2x.jpg');
+    }
+  }
+}
+
+.about__box {
+  background: #fcfcfb;
+  opacity: 0.9;
+}
+
+.about__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 32px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 134px;
+    padding-right: 134px;
+    padding-bottom: 44px;
+    padding-top: 44px;
+    gap: 122px;
+  }
+}
+
+.about__title {
+  color: #2d2a22;
+  margin-bottom: 8px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.about__list {
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-bottom: 0;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    gap: 27px;
+    margin-right: auto;
+  }
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-basis: calc((100% - 20px * 1) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px * 1) / 2);
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 27px * 1) / 2);
+    margin-bottom: 65px;
+  }
+
+  &:last-child,
+  &:nth-last-child(2) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:before {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:first-child::before {
+    content: url(../images/icons/about_icon1.png);
+  }
+
+  &:nth-child(2)::before {
+    content: url(../images/icons/about_icon2.png);
+  }
+
+  &:nth-child(3)::before {
+    content: url(../images/icons/about_icon3.png);
+  }
+
+  &:nth-child(4)::before {
+    content: url(../images/icons/about_icon4.png);
+  }
+}
+
+.about__right {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 393px;
+  }
+}
+
+.about__desc {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}

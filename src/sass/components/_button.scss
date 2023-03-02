@@ -1,0 +1,191 @@
+.btn-dark-desk {
+  display: block;
+  min-width: 152px;
+  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  color: $light-color;
+  background-color: #2e2b23;
+
+  border: 1px solid $light-color;
+  border-radius: 8px;
+
+  padding: 8px 30px;
+  margin: 0;
+
+  cursor: pointer;
+
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
+
+  &:hover,
+  &:focus {
+    border: 1рх solid transparent;
+    color: $dark-color;
+    background-color: $light-color;
+    transform: scale(1.02);
+  }
+}
+
+.btn-modal {
+  display: block;
+  min-width: 192px;
+  height: 48px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  color: $light-color;
+  background-color: $main-color;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 52px;
+  margin: 0;
+  cursor: pointer;
+
+  transition-duration: 150ms;
+  transition-property: box-shadow, transform;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(32, 10, 2, 0.251) 0px 4px 12px;
+    transform: scale(1.03);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 224px;
+    height: 54px;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    padding: 9px 46px;
+  }
+}
+
+.btn-white {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+
+  color: $dark-color;
+  background-color: $light-color;
+
+  border: 0;
+  border-radius: 16px;
+
+  padding: 10px 45px;
+  margin: 0;
+
+  cursor: pointer;
+
+  transition-duration: 150ms;
+  transition-property: color, background-color, transform;
+
+  &:hover,
+  &:focus {
+    color: $light-color;
+    background-color: $main-color;
+    transform: scale(1.02);
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    min-width: 256px;
+    min-height: 54px;
+    padding: 9px 62px;
+
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
+}
+
+.btn-main-color {
+  display: block;
+  min-width: 240px;
+  height: 54px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(27 / 18);
+  text-align: center;
+  color: $light-color;
+  background-color: $main-color;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  padding: 13.5px 36.5px;
+  margin: 0;
+  cursor: pointer;
+
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $main-color;
+    color: $main-color;
+    background-color: $light-color;
+    transform: scale(1.02);
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    min-width: 264px;
+    min-height: 58px;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    padding: 14px 39.5px;
+  }
+}
+
+.btn-dark-small {
+  display: block;
+  min-width: 240px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  color: $main-color;
+  background-color: $light-color;
+  border-radius: 8px;
+  padding: 12px 75px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition-duration: 150ms;
+  transition-property: border, color, background-color, transform;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $light-color;
+    color: $light-color;
+    background-color: $main-color;
+    transform: scale(1.02);
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    min-width: 224px;
+    height: 54px;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+
+    padding: 9px 45px;
+  }
+}

@@ -1,0 +1,38 @@
+<!-- модальное окно main -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-btn-icon" width="32" height="32">
+                <use href="images/svg-sprite.svg#modal-close-main"></use>
+            </svg>
+        </button>
+
+        <div class="modal-box">
+            <p class="modal-title">Leave your contacts and we will contact you</p>
+            <form name="modal-form">
+                <label class="modal-form-label" for="user_name">Name</label>
+                <div class="modal-form-group">
+                    <input class="modal-form-field" type="text" name="user_name" id="user_name" placeholder="Yuliia"
+                        required pattern="[a-z]{1,15}"
+                        title="Username should only contain lowercase letters. e.g. john">
+
+                </div>
+
+                <label class="modal-form-label">Telephone</label>
+                <div class="modal-form-group">
+                    <input class="modal-form-field" type="text" name="user_phone" id="user_phone" placeholder="+380"
+                        title="fill in the phone number field" required minlength="13" maxlength="13">
+
+                </div>
+
+                <label class="modal-form-label">Email</label>
+                <div class="modal-form-group">
+                    <input class="modal-form-field" type="text" name="user_email" id="user_email"
+                        placeholder="Contact@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+
+                <button class="btn-modal btn" type="submit">Contact us</button>
+            </form>
+        </div>
+    </div>
+</div>

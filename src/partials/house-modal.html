@@ -1,0 +1,26 @@
+<!--Download catalog-->
+<div class="house-backdrop is-hidden" data-house-modal>
+    <div class="house">
+        <button class="house__btn-close" type="button" data-house-modal-close>
+            <svg class="house__icon" width="32" height="32">
+                <use href="images/svg-sprite.svg#modal-close"></use>
+            </svg>
+        </button>
+        <h3 class="house__title">House 1</h3>
+        <div class="house__container">
+            <picture>
+                <source media="(min-width: 320px)" srcset="
+                    ./images/modals/house-1.png 1x,
+                     ./images/modals/house-1@2x.png 2x">
+                <img class="house__img" src="./images/modals/house-1@2x.png" alt="House 1" width="240" height="200">
+            </picture>
+            <div class="house__content-wrapper">
+                <p class="house__area">Total area: <span class="house__area-light">50.2 m2</span></p>
+                <p class="house__area">Rooms: <span class="house__area-light">1</span></p>
+                <strong class="house__price">from 1000 dol/m2</strong>
+                <p class="house__total-price">about 50 200 dollars</p>
+                <button class="house__btn btn-modal" data-modal-open>Contact us</button>
+            </div>
+        </div>
+    </div>
+</div>
